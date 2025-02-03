@@ -67,9 +67,14 @@
 }
 @media (max-width: 450px) {
   .images-container h2 {
-    font-size: 5rem;
+    font-size: 3rem;
   }
 }
+@media (max-width: 350px) {
+    .images-container h2 {
+      font-size: 3rem;
+    }
+  }
 
 /* *********for button******** */
 
