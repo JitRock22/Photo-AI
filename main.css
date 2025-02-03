@@ -1,0 +1,126 @@
+.images-container h2 {
+  font-size: 4.5rem;
+  transition: 0.5s ease-in-out;
+  color: rgba(19, 9, 9, 0.589);
+  transform: translateX( 50px,200px); 
+  /* transition: 2s ease-in-out; */
+  /* font-family:'' */
+  font-weight: 300;
+}
+.images-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.images-container img {
+  width: 30rem;
+  height: 30rem;
+  border-radius: 12px;
+}
+@media(max-width:460px){
+    .images-container img{
+        width: 25rem;
+        height: 25rem;
+    }
+    .images-container{
+        margin-top: 3rem;
+    }
+}
+/* for overlay effect */
+.images-container .imageDiv {
+  position: relative;
+}
+
+.images-container .overlay {
+  position: absolute;
+  left: 0;
+
+  bottom: 0;
+  width: 100%;
+  height: 0;
+  border-radius: 12px;
+  background-color: rgba(0, 0, 0, 0.623);
+  text-align: center;
+}
+.imageDiv:hover .overlay {
+  height: 100%;
+  transition: height 0.3s ease;
+}
+
+/* styling overlay text */
+.imageDiv .overlay h3 {
+  display: block;
+  font-size: 1.8rem;
+  padding: 3rem;
+  color: white;
+}
+.imageDiv:hover .overlay h3 {
+  display: block;
+  color: white;
+}
+@media (max-width: 600px) {
+    .images-container{
+        margin-top: 3rem;
+    }
+}
+@media (max-width: 450px) {
+  .images-container h2 {
+    font-size: 5rem;
+  }
+}
+
+/* *********for button******** */
+
+/* CSS */
+.button-26 {
+  appearance: button;
+  background-color: #1652F0;
+  border: 1px solid #1652F0;
+  border-radius: 12px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family:'Poppins',sans-serif;
+  font-size: 14px;
+  line-height: 1.15;
+  overflow: visible;
+  padding: 12px 16px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transition: all 80ms ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+}
+
+.button-26:disabled {
+  opacity: .5;
+}
+
+.button-26:focus {
+  outline: 0;
+}
+
+.button-26:hover {
+  background-color: #0A46E4;
+  border-color: #0A46E4;
+}
+
+.button-26:active {
+  background-color: #0039D7;
+  border-color: #0039D7;
+}
+.load-more{
+    display: none;
+}
+main section{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3rem;
+}

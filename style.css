@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Lexend+Giga:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 5rem;
+  height: 100vh;
+}
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+  padding: 5rem;
+  font-size: 3rem;
+}
+header h1 {
+  cursor: pointer;
+  color: #1652f0;
+}
+header form {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  height: 8rem;
+  width: 90%;
+  border: none;
+  gap: 2rem;
+  padding: 3rem;
+}
+header form input {
+  outline: none;
+  border: none;
+  border-radius: 25px;
+  font-size: 2rem;
+  width: 100%;
+  padding: 2rem 1.5rem;
+  background-color: rgba(128, 128, 128, 0.144);
+}
+
+.button1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5.5em;
+  height: 5.5rem;
+  padding: 2rem 2rem;
+  border: none;
+  border-radius: 14px;
+  background-color: #1652f0;
+  transition: 0.2s ease-out;
+  color: #fff;
+  cursor: pointer;
+}
+.button2 {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 2rem;
+  width: 5.5em;
+  height: 5.5rem;
+  padding: 0rem 2rem;
+  border: none;
+  border-radius: 14px;
+  background-color: #1652f0;
+  transition: 0.2s ease-out;
+  color: #fff;
+  cursor: pointer;
+}
+header form button:hover {
+  background-color: #1654f0d8;
+}
+
+@media (max-width: 978px) {
+  html {
+    font-size: 55%;
+  }
+  header {
+    gap: 8rem;
+  }
+}
+@media (max-width: 600px) {
+  html {
+    font-size: 45%;
+  }
+
+  header form {
+    width: 100%;
+  }
+  header form input {
+    width: 45rem;
+    padding: 2rem 3rem;
+  }
+  header {
+    height: 40%;
+    gap: 3rem;
+  }
+  form {
+    flex-direction: column;
+  }
+  .button1 {
+    display: none;
+  }
+  .button2 {
+    display: flex;
+    padding-block: 2rem;
+  }
+}
