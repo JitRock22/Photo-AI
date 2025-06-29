@@ -29,7 +29,7 @@ header {
 }
 header h1 {
   cursor: pointer;
-  color: #1652f0;
+  color: #ffffff;
 }
 header form {
   width: 50%;
@@ -50,9 +50,11 @@ header form input {
   font-size: 2rem;
   width: 100%;
   padding: 2rem 1.5rem;
-  background-color: rgba(128, 128, 128, 0.144);
+  background-color: rgba(231, 229, 229, 0.144);
 }
-
+input:placeholder{
+  color: #fff;
+}
 .button1 {
   display: flex;
   align-items: center;
@@ -62,7 +64,7 @@ header form input {
   padding: 2rem 2rem;
   border: none;
   border-radius: 14px;
-  background-color: #1652f0;
+  background-color: #4dce1b;
   transition: 0.2s ease-out;
   color: #fff;
   cursor: pointer;
@@ -74,17 +76,18 @@ header form input {
   text-align: center;
   font-size: 2rem;
   width: 5.5em;
-  height: 5.5rem;
+  height: 5rem;
   padding: 0rem 2rem;
   border: none;
   border-radius: 14px;
-  background-color: #1652f0;
+  background-color: #ffffff;
   transition: 0.2s ease-out;
   color: #fff;
   cursor: pointer;
 }
+
 header form button:hover {
-  background-color: #1654f0d8;
+  background-color: #14b606d8;
 }
 
 @media (max-width: 978px) {
@@ -122,3 +125,5 @@ header form button:hover {
     padding-block: 2rem;
   }
 }
+
+

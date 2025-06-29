@@ -26,7 +26,11 @@ const fetchImages =
                     // create image div
                     const imageElement = document.createElement('div');
                     imageElement.classList.add('imageDiv');
-                    imageElement.innerHTML = `<img src="${element.urls.regular}"/>`;
+                    // imageElement.innerHTML = `<img src="${element.urls.regular}"/>`;
+                    imageElement.innerHTML = `
+                    <img src="${element.urls.regular}" alt="${element.alt_description || 'AI Image'}"/>
+                    `;
+
 
                     // creating overlay effect
                     const overlayElement = document.createElement('div');
@@ -49,35 +53,35 @@ const fetchImages =
                 }
             } else {
                 imgContainer.innerHTML = `<h2>No images Found...</h2>`;
-                if(loadBtn.style.display=="block"){
-                    loadBtn.style.display="none";
+                if (loadBtn.style.display == "block") {
+                    loadBtn.style.display = "none";
                 }
 
             }
-        }catch(error){
+        } catch (error) {
             imgContainer.innerHTML = `<h2>Failed to fetch images....</h2>`;
         }
 
-        }
+    }
 
 // adding event listner to search for 
 searchForm.addEventListener('submit', (e) => {
-            e.preventDefault(); //prevent auto form submission
+    e.preventDefault(); //prevent auto form submission
 
-            const inputText = input.value.trim();
-            if (inputText !== '') {
-                page = 1;
-                fetchImages(inputText, page);
-            } else {
-                imgContainer.innerHTML = `<h2>Please Enter a Search topic...</h2>`;
-                if(loadBtn.style.display=="block"){
-                    loadBtn.style.display="none";
-                }
-            }
-        });
-        //for load more button this function usd
-        loadBtn.addEventListener('click', () => {
-            const inputText = input.value.trim();
-            fetchImages(inputText, ++page);
-            console.log(page);
-        });
+    const inputText = input.value.trim();
+    if (inputText !== '') {
+        page = 1;
+        fetchImages(inputText, page);
+    } else {
+        imgContainer.innerHTML = `<h2>Please Enter a Search topic...</h2>`;
+        if (loadBtn.style.display == "block") {
+            loadBtn.style.display = "none";
+        }
+    }
+});
+//for load more button this function usd
+loadBtn.addEventListener('click', () => {
+    const inputText = input.value.trim();
+    fetchImages(inputText, ++page);
+    console.log(page);
+});

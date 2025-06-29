@@ -1,11 +1,10 @@
 .images-container h2 {
-  font-size: 4.5rem;
+  font-size: 3rem;
   transition: 0.5s ease-in-out;
-  color: rgba(19, 9, 9, 0.589);
+  color: #FFFFFF;
   transform: translateX( 50px,200px); 
-  /* transition: 2s ease-in-out; */
-  /* font-family:'' */
   font-weight: 300;
+  margin-bottom: 200px;
 }
 .images-container {
   display: flex;

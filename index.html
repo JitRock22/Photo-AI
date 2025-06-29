@@ -2,33 +2,41 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="./fav.png">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search"
     />
-    <title>Photo AI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>PhotoAI</title>
+    <style>
+      body {
+      background: #3F5EFB;
+background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+      }
+      hero {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
   </head>
   <body>
-    <header>
-      <h1>Photo AI</h1>
-      <form action="">
-        <input type="text" placeholder="Search Images" class="search-input"/>
-        <button class="button1"><span class="material-symbols-outlined"> search </span></button>
-        <button class="button2"> <span>Search</span> </button>
-      </form>
-    </header>
-    <main>
-        <section>
-            <div class="images-container">
-                <h2>Search Something.....</h2>
-            </div>
-            <button class="load-more button-26">Load More</button>
-        </section>
-    </main>
-    <script src="script.js"></script>
+    <hero class="flex flex-col gap-8 justify-center items-center h-screen text-white">
+      <h1
+        class="flex justify-center items-center font-bold text-4xl mid:text-5xl lg:text-6xl"
+      >
+        Discover Stunning AI-Generated Images
+      </h1>
+      <p class=" text-center text-lg mid:text-xl lg:text-2xl">
+        Search any topic and get amazing AI-generated photos instantly
+      </p>
+      <button class="mt-6 hover:scale-105 transition duration-300">
+        <a href="./photo.html"
+          class="bg-white text-blue-600 px-6 py-3 rounded-full font-semibold hover:bg-gray-200 transition duration-300">
+          Start Exploring ✨
+        </a>
+      </button>
+    </hero>
   </body>
 </html>
